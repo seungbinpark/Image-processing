@@ -12,7 +12,7 @@ int main(int argc, char* argv[]) {
 	fread(&bmpFile, sizeof(BITMAPFILEHEADER), 1, inputFile);
 	fread(&bmpInfo, sizeof(BITMAPINFOHEADER), 1, inputFile);
 
-	int width = bmpInfo.biWidth;	//rgb Æ÷ÇÔ
+	int width = bmpInfo.biWidth;	//rgb í¬í•¨
 	int height = bmpInfo.biHeight;		
 	int size = bmpInfo.biSizeImage;
 	int bitCnt = bmpInfo.biBitCount;
@@ -30,9 +30,9 @@ int main(int argc, char* argv[]) {
 	float Y,Cb,Cr;
 
 
-	//input img´Â °í·ÁÇÒ°Ô ¸¹À½
-	// rgb¸¦ y·Î ¹Ù²ã¼­ ¿µ»ó ÁÂÇ¥¸¦
-	// outputImg ÀÛ¾÷
+	//input imgëŠ” ê³ ë ¤í• ê²Œ ë§ìŒ
+	// rgbë¥¼ yë¡œ ë°”ê¿”ì„œ ì˜ìƒ ì¢Œí‘œë¥¼
+	// outputImg ì‘ì—…
 
 	//for (int j = 0;j < height;j++) {
 	//	for (int i = 0;i < width;i++) {
